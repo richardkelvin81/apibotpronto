@@ -10,7 +10,7 @@ const flowBienvenida = addKeyword('hola').addAnswer('¡Cómo estás!, bienvenido
 
 const main = async () => {
     const provider = createProvider(BaileysProvider);
-    provider.initHttpServer(3001);
+    provider.initHttpServer(3002);
 
     const corsMiddleware = cors();
     provider.http?.server.use(corsMiddleware); // Aplica CORS a todas las rutas
