@@ -5,12 +5,12 @@ import cors from 'cors';
 
 
 
-const flowBienvenida = addKeyword('hola').addAnswer('¡Cómo estás!, bienvenido a PRONTO SERVICE'S');
+const flowBienvenida = addKeyword('hola').addAnswer('¡Cómo estás!, bienvenido a LUXOR CORP SERVICE');
 
 
 const main = async () => {
     const provider = createProvider(BaileysProvider);
-    provider.initHttpServer(3002);
+    provider.initHttpServer(3001);
 
     const corsMiddleware = cors();
     provider.http?.server.use(corsMiddleware); // Aplica CORS a todas las rutas
